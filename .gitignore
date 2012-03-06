@@ -4,6 +4,7 @@
 /GeneratedFiles/
 *sdf
 *pdb
+*.ilk
 logfile.txt
 ctp-auto-trading.exe
 
