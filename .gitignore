@@ -3,4 +3,7 @@
 /ipch/
 /GeneratedFiles/
 *sdf
+*pdb
+logfile.txt
+ctp-auto-trading.exe
 

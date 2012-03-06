@@ -11,6 +11,7 @@
 #include <QTextStream>
 #include <QCloseEvent>
 #include <QKeyEvent>
+#include <QFont>
 
 LogBrowserDialog::LogBrowserDialog(QWidget *parent)
     : QDialog(parent)
@@ -35,7 +36,10 @@ LogBrowserDialog::LogBrowserDialog(QWidget *parent)
     saveButton = new QPushButton(this);
     saveButton->setText("save output");
     buttonLayout->addWidget(saveButton);
-    connect(saveButton, SIGNAL(clicked()), this, SLOT(save()));
+    connect(saveButton, SIGNAL(clicked()), this, SLOT(slotSave()));
+
+    QFont font("Times", 10);
+    setFont(font);
 
     resize(200, 400);
 }
